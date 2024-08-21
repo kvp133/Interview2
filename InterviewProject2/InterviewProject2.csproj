@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="EzDAL">
+      <HintPath>..\05.Refs\Libs\EzSql\EzDAL.dll</HintPath>
+    </Reference>
+    <Reference Include="EzSql">
+      <HintPath>..\05.Refs\Libs\EzSql\EzSql.dll</HintPath>
+    </Reference>
+    <Reference Include="EzSqlServer">
+      <HintPath>..\05.Refs\Libs\EzSql\EzSqlServer.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
